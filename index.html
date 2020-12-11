@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>森高千里を探そう</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <section>
+    <h1>YouTubeで森高千里を探そう</h1>
+  </section>
+
+  <section  style="display: flex;">
+    <div>
+      <h2>YouTube検索</h2>
+      <div id="videoList"> </div>
+    </div>
+
+    <div class="AI_area" >
+      <h2>AI分析</h2>
+      <h3>imgフォルダのファイルを選択してください</h3>
+      <!-- ファイル選択 -->
+      <input id="dummy_file" type="text" >
+      <label for="filename1" >                      <!-- inputとの紐づけ -->
+      <span class="browse_btn">ファイル選択</span>   <!--  ファイル選択　ボタン表示-->
+      <input type="file"  size="16" id="filename1" accept="img/*">  <!--  ファイル選択　JSのfilename1とsection4をキック-->
+      </label>
+    
+      <!--画像表示  -->
+      <div class="disparea" >
+      </div>
+      <!--//画像表示  -->
+      <div class="selpic" id="selpic_disp">
+      </div>  
+
+        <!--- ラベル検出の結果を表示 --->
+        <!-- <div class="resultArea hidden"> -->
+      <div class="resultArea hidden" >  
+        <table id="resultTable">
+          <thead><tr><td><b style="font-size: 20px;" >この写真のAI解析結果</b></td></tr></thead>
+          <tbody id="resultBox"></tbody>
+        </table>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+   <!-- JQuery & javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
